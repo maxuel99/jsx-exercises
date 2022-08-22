@@ -1,9 +1,10 @@
-//Write a function that receives a name argument and returns a h1 tag with the name variable appended to the "Hello, " string
+//Write a function that receives two parameters, a and b and returns the sum of them within an h2 tag.
 
-function Welcome(props) {
-    return <h1>Hello, {props.name}</h1>;
+function sum(a, b) {
+    return a + b
   }
   
+  const result = <h2>{sum(1,9)}</h2>
+
   const root = ReactDOM.createRoot(document.getElementById('root'));
-  const element = <Welcome name="Massimo" />;
-  root.render(element)
+  root.render(result)
