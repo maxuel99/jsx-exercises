@@ -1,3 +1,9 @@
-//Create a variable called hello and inizialize it with an h1 tag with the message "Hello, World!".
+//Write a function that receives a name argument and returns a h1 tag with the name variable appended to the "Hello, " string
 
-const hello = <h1>Hello, World!</h1>
+function Welcome(props) {
+    return <h1>Hello, {props.name}</h1>;
+  }
+  
+  const root = ReactDOM.createRoot(document.getElementById('root'));
+  const element = <Welcome name="Massimo" />;
+  root.render(element)
